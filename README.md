@@ -1,4 +1,5 @@
 # Phonebook
 Store contacts efficiently on computer<br />
 
-Before
+The location to store application's data could be provided by editting resources.properties file. 
+
