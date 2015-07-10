@@ -6,6 +6,7 @@
 package phonebook;
 
 import java.awt.Dimension;
+import java.awt.Insets;
 import javax.swing.JComboBox;
 import javax.swing.JSeparator;
 
@@ -44,12 +45,13 @@ public class AddEditContactDetails extends javax.swing.JPanel {
         propertyValue = new javax.swing.JTextField();
         remove = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new Dimension(10, HEIGHT_EXPECTED));
 
         propertyName.setMaximumSize(new java.awt.Dimension(100, 32767));
         propertyName.setPreferredSize(new java.awt.Dimension(150, 20));
 
-        propertyValue.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        propertyValue.setBorder(null);
 
         remove.setText("x");
         remove.setMargin(new java.awt.Insets(2, 2, 2, 2));
@@ -65,8 +67,8 @@ public class AddEditContactDetails extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(propertyName, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(propertyValue)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(propertyValue, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(remove, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
